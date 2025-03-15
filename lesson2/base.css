@@ -80,3 +80,28 @@ body {
   height: 1200px;
   border: solid 1px #000;
 }
+
+.box-in {
+  width: 400px;
+  height: 200px;
+}
+
+.box-red {
+  background-color: red;
+}
+
+.box-blue {
+  background-color: blue;
+}
+
+.box-red-position {
+  margin: 0 0 0 600px;
+}
+
+.box-blue-position {
+  margin: 200px 0 0 0;
+}
+
+.box-out-position {
+  margin: 10px 0 0 550px;
+}
