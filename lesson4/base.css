@@ -1,7 +1,26 @@
 @charset "UTF-8";
 /* reset */
-body, h1, h2, h3, h4, h5, h6, p, address,
-ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+form,
+table,
+tr,
+th,
+td {
   margin: 0;
   padding: 0;
   border: none;
@@ -13,20 +32,37 @@ ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
   border-collapse: collapse;
 }
 
-textarea { font-size: 100%; vertical-align:middle;}
-img { border-style: none; display: block; }
-hr { display: none; }
-em{font-style: normal}
-input{line-height:auto;vertical-align:middle;}
-strong.more{color:#c30}
-a{text-decoration: none;}
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+img {
+  border-style: none;
+  display: block;
+}
+hr {
+  display: none;
+}
+em {
+  font-style: normal;
+}
+input {
+  line-height: auto;
+  vertical-align: middle;
+}
+strong.more {
+  color: #c30;
+}
+a {
+  text-decoration: none;
+}
 
 html {
-
 }
 
 body {
-  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    Meiryo, "ＭＳ Ｐゴシック", sans-serif;
 }
 
 * {
@@ -38,3 +74,57 @@ body {
 }
 
 /* 上の部分は気にせずここから書く */
+.main-contents {
+  display: flex;
+  width: 80%;
+  max-width: 1800px;
+  height: 1200px;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.main-contents .flex {
+  margin: 0 auto;
+  flex: 1;
+  border: 1px solid black;
+}
+
+.box-red {
+  background-color: red;
+}
+
+.box-blue {
+  background-color: blue;
+}
+
+.box-green {
+  background: green;
+}
+
+.in-flex {
+  display: flex;
+}
+
+.box {
+  padding: 50px;
+  background-color: #fff;
+  margin: 10px;
+}
+
+.box-position-in-red {
+  margin: 530px 130px;
+  padding: 0 auto;
+}
+
+.box-position-in-blue {
+  margin-left: 230px;
+  padding: 0 auto;
+}
+
+.box-position-in-green {
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  margin-right: 480px;
+}
